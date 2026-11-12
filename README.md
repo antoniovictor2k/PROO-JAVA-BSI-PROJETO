@@ -6,12 +6,11 @@
 ### IDENTIFICAÇÃO DO PROJETO
 
 * **Disciplina:** Programação Orientada a Objetos (PROO)
-* **Professor:** [Nome do Professor]
+* **Professor:** Kenji Kamei
 * **Integrantes do Grupo:**
-  * [Nome do Integrante 1] — Matrícula: [Número de Matrícula]
-  * [Nome do Integrante 2] — Matrícula: [Número de Matrícula]
-  * [Nome do Integrante 3] — Matrícula: [Número de Matrícula]
-  * [Nome do Integrante 4] — Matrícula: [Número de Matrícula]
+  * Antonio Victor Pereira Severiano — Matrícula: 2024014112
+  * Bruno Gabriel Marcolino Moura — Matrícula: 2024014444
+  * José Cauã Correia Silva — Matrícula: 2026010551
 * **Data e Horário Limite de Entrega:** [Inserir Data e Horário Limite]
 
 ---
