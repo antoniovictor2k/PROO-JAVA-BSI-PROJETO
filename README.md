@@ -11,7 +11,7 @@
   * Antonio Victor Pereira Severiano — Matrícula: 2024014112
   * Bruno Gabriel Marcolino Moura — Matrícula: 2024014444
   * José Cauã Correia Silva — Matrícula: 2026010551
-* **Data e Horário Limite de Entrega:** [Inserir Data e Horário Limite]
+* **Data e Horário Limite de Entrega:**
 
 ---
 
