@@ -1,6 +1,40 @@
 # ESPECIFICAÇÃO INICIAL DO PROJETO DE SOFTWARE (PROO)
 ## Sistema SimulaVoz DETRAN: Inovação Social Digital em Acessibilidade para Exames de Trânsito
 
+## Protótipo do bot
+
+O bot usa Java 21 ou superior e Maven. O Playwright Java abre o Chromium
+com um perfil próprio. O WhatsApp Web faz o pareamento no navegador, e
+o conector WA-JS entrega as mensagens ao serviço de respostas em Java.
+Este protótipo oferece um menu em português
+com uma questão de demonstração e feedback de resposta. O simulado completo e
+os recursos de áudio fazem parte da especificação abaixo.
+
+### Testar as respostas no terminal
+
+```sh
+mvn compile exec:java -Dexec.args=--console
+```
+
+Digite `oi`, depois `2` para ver a questão e `A`, `B` ou `C` para responder.
+
+### Conectar ao WhatsApp Web
+
+```sh
+mvn compile exec:java
+```
+
+1. No celular, abra **Aparelhos conectados** no WhatsApp e selecione **Conectar um aparelho**.
+2. Na primeira execução, aguarde a instalação dos navegadores pelo Playwright. Escaneie o QR na página do WhatsApp Web no Chromium.
+3. Mantenha a janela aberta. No celular, abra a conversa com seu próprio número (Você) e envie `oi`. O bot responde com `SimulaVoz: ` seguido do menu. Envie `2` para receber a questão. Conversas individuais de outras pessoas também recebem atendimento.
+
+O perfil fica em `.whatsapp-session/chromium/`, fora do Git. Na migração da
+Cobalt, faça o vínculo uma vez para criar esse perfil. As próximas execuções
+reutilizam a sessão enquanto o aparelho permanecer conectado.
+
+O conector incluído é o pacote publicado `@wppconnect/wa-js` 4.8.2, com as
+licenças junto ao arquivo distribuído. [Documentação do WA-JS](https://wppconnect.io/wa-js/).
+
 ---
 
 ### IDENTIFICAÇÃO DO PROJETO
